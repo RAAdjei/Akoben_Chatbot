@@ -38,7 +38,7 @@ def lemNormalize(text):
 
 # User greetings
 USER_GREETINGS = ('hi', 'hello', 'wassup', 'whatsup', 'wossop',
-                  'good morning', 'good afternoon', 'good evening')
+                  'good morning', 'good afternoon', 'good evening', 'hey there')
 
 # bot greeeting
 BOT_GREETING = ['Hi', 'Hello there!', 'Hi there!', 'Nice to meet you']
@@ -76,8 +76,8 @@ def response(user_response):
 # Conversations and start and end commands
 flag = True
 
-# print("I am Akoben, your legal assistant, how may I assist you?, "
-#      "if you want to end this conversation type 'bye' Thanks!")
+print("I am Akoben, your legal assistant, how may I assist you?, "
+     "if you want to end this conversation type 'bye' Thanks!")
 
 if __name__ == "__main__":
     while flag == True:
