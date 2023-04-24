@@ -6,7 +6,7 @@ from akoben_main import response
 app = Flask(__name__)
 
 
-# CORS(app)
+CORS(app)
 
 
 @app.route("/")
@@ -16,9 +16,9 @@ def hello_world():
 
 @app.post("/predict")
 def predict():
-    text = request.get_json().get("msg")
+    text = request.get_json().get("message")
 
-    response = akoben_main.response(text)
+    response = akoben_main.main_response(text)
     message = {"answer": response}
     return jsonify(message)
 
